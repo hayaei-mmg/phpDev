@@ -1,0 +1,16 @@
+{
+    "name": "php_ci_book/blogapp",
+    "authors": [
+        {
+            "name": "haya",
+            "email": "hayashi@mmg-animo.co.jp"
+        }
+    ],
+	 "config": {
+   		"vendor_dir": "Vendor"
+ 		},
+    "require": {
+        "cakephp/cakephp": "2.5.*",
+        "josegonzalez/cakephp-environments": "1.0.0"
+    }
+}
