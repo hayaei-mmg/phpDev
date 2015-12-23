@@ -1,6 +1,6 @@
 <?php
 /**
- * PostFixture
+ *  PostFixture
  *
  */
 class PostFixture extends CakeTestFixture {
