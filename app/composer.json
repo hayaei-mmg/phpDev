@@ -20,7 +20,7 @@
         "pear/pear_exception": "@dev",
         "sizuhiko/Bdd": "dev-master",
         "behat/mink-goutte-driver": "*",
-        "sizuhiko/fabricate": "^2.0"
+        "sizuhiko/fabricate": "1.2.1"
     },
     "require": {
         "cakephp/cakephp": "2.5.*",

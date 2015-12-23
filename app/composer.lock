@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ceef5787f2521e95ab28893bb913e1f2",
-    "content-hash": "696938eab810a1ce46e8da34c8076ff4",
+    "hash": "1ebb31610d52739ca74b8f8865472848",
+    "content-hash": "1c771e69ea5977964d2f0b6e49d16697",
     "packages": [
         {
             "name": "cakedc/migrations",
@@ -701,58 +701,6 @@
                 "scraper"
             ],
             "time": "2014-10-09 15:52:51"
-        },
-        {
-            "name": "fzaninotto/faker",
-            "version": "v1.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "d0190b156bcca848d401fb80f31f504f37141c8d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/d0190b156bcca848d401fb80f31f504f37141c8d",
-                "reference": "d0190b156bcca848d401fb80f31f504f37141c8d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~1.5"
-            },
-            "suggest": {
-                "ext-intl": "*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.5.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Faker\\": "src/Faker/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "François Zaninotto"
-                }
-            ],
-            "description": "Faker is a PHP library that generates fake data for you.",
-            "keywords": [
-                "data",
-                "faker",
-                "fixtures"
-            ],
-            "time": "2015-05-29 06:29:14"
         },
         {
             "name": "guzzle/common",
@@ -1510,37 +1458,23 @@
         },
         {
             "name": "sizuhiko/fabricate",
-            "version": "2.0.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sizuhiko/Fabricate.git",
-                "reference": "e24ad3eeaeb68ee4314fabc4be94285c46a71d66"
+                "reference": "3b48de238a749577565cc2be4aa6721c9f5b60bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sizuhiko/Fabricate/zipball/e24ad3eeaeb68ee4314fabc4be94285c46a71d66",
-                "reference": "e24ad3eeaeb68ee4314fabc4be94285c46a71d66",
+                "url": "https://api.github.com/repos/sizuhiko/Fabricate/zipball/3b48de238a749577565cc2be4aa6721c9f5b60bf",
+                "reference": "3b48de238a749577565cc2be4aa6721c9f5b60bf",
                 "shasum": ""
             },
             "require": {
-                "fzaninotto/faker": "~1.4"
+                "composer/installers": "*"
             },
-            "require-dev": {
-                "phpunit/phpunit": "*"
-            },
-            "suggest": {
-                "sizuhiko/cake_fabricate": "for integration with CakePHP3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Fabricate\\": "src"
-                }
-            },
+            "type": "cakephp-plugin",
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
             "authors": [
                 {
                     "name": "sizuhiko",
@@ -1548,7 +1482,7 @@
                 }
             ],
             "description": "CakePHP data generator for Testing",
-            "time": "2015-04-18 05:53:49"
+            "time": "2014-07-21 08:21:32"
         },
         {
             "name": "sizuhiko/spec-php",

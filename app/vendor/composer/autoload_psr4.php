@@ -19,6 +19,4 @@ return array(
     'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'Symfony\\Component\\Config\\' => array($vendorDir . '/symfony/config'),
     'Symfony\\Component\\BrowserKit\\' => array($vendorDir . '/symfony/browser-kit'),
-    'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
-    'Fabricate\\' => array($vendorDir . '/sizuhiko/fabricate/src'),
 );
