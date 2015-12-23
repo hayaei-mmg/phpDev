@@ -2,6 +2,5 @@
 app/tmp/*
 app/Plugin/*
 app/Vendor/*
-app/vendor/*
 app/reports/*
 app/Config/bootstrap/environments/production.php
