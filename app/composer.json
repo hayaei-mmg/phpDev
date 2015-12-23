@@ -25,6 +25,7 @@
     "require": {
         "cakephp/cakephp": "2.5.*",
         "josegonzalez/cakephp-environments": "1.0.0",
-        "cakedc/migrations": "^2.4"
+        "cakedc/migrations": "^2.4",
+        "fzaninotto/faker": "1.4.*"
     }
 }
