@@ -36,7 +36,7 @@ class PostsControllerTest extends ControllerTestCase {
 		$this->assertEquals($data, $vars['posts']);
 	}
 
-	public function testAddアクションで保存が失敗したときメッセージがセットされること() {
+/*	public function testAddアクションで保存が失敗したときメッセージがセットされること() {
 		$this->controller->Post->expects($this->once())
 			->method('save')->will($this->returnValue(false));
 		$this->controller->Session->expects($this->once())
@@ -55,5 +55,5 @@ class PostsControllerTest extends ControllerTestCase {
 
 		$this->testAction('/blogs/new', ['method' => 'post', 'data' => ['title' => 'Title1', 'body' => 'Body1']]);
 	}
-
+*/
 }

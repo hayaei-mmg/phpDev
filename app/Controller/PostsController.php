@@ -22,7 +22,7 @@ class PostsController extends AppController {
 
 	public function add() {
 		if ($this->request->is('post')) {
-			$current_user = $this->Auth->user();
+			// $current_user = $this->Auth->user();
 			$this->request->data['Post']['author_id'] = $current_user['id'];
 
 			$this->Post->create($this->request->data);
