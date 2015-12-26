@@ -3,7 +3,7 @@
     Phing build config file.
     @link http://www.phing.info/
 -->
-<project name="app" default="build">
+<project name="myAppTest" default="build">
     <!-- Properties -->
     <property name="basedir" value="${phing.dir}" />
     <property name="appdir" value="${basedir}/app" />
