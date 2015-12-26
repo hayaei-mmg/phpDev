@@ -9,6 +9,8 @@
     <property name="appdir" value="${basedir}/app" />
     <property name="logdir" value="${appdir}/tmp/logs" />
 
+    <chmod file="${basedir}/app/Console/cake" mode= "0755" verbose= "true" />
+
     <!-- Build(1) -->
     <target name="build" depends="prepare,caketest"/>
 
