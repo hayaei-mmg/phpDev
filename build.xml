@@ -8,7 +8,7 @@
     <property name="basedir" value="${phing.dir}" />
     <property name="appdir" value="${basedir}/app" />
     <property name="logdir" value="${appdir}/tmp/logs" />
-    <property name="vendorbindir" value="${appdir}/Vendor/bin" />
+    <property name="vendorbindir" value="${appdir}/vendor/bin" />
 
     <chmod file="${basedir}/app/Console/cake" mode= "0755" verbose= "true" />
     <mkdir dir="${basedir}/app/tmp/" />
@@ -53,10 +53,10 @@
         <exec dir="${basedir}" executable="${vendorbindir}/phpcs" output="${logdir}/phpcs.log">
             <arg line="--config-set" />
             <arg line="installed_paths" />
-            <arg line="${appdir}/Vendor/cakephp/cakephp-codesniffer" />
+            <arg line="${appdir}/vendor/cakephp/cakephp-codesniffer" />
         </exec>
         <exec dir="${basedir}" executable="${vendorbindir}/phpcs" output="${logdir}/phpcs.log">
-            <arg line="--ignore=Test,Vendor,Plugin" />
+            <arg line="--ignore=Test,vendor,Plugin" />
             <arg line="--report=checkstyle" />
             <arg line="--report-checkstyle=${appdir}/reports/checkstyle.xml" />
             <arg line="--standard=CakePHP" />
@@ -71,7 +71,7 @@
             <arg line="${appdir}" />
             <arg line="xml" />
             <arg line="codesize,unusedcode,design,naming" />
-            <arg line="--exclude ${appdir}/Test,${appdir}/Vendor,${appdir}/Plugin,${appdir}/Config/Migration,${appdir}/Config/Schema" />
+            <arg line="--exclude ${appdir}/Test,${appdir}/vendor,${appdir}/Plugin,${appdir}/Config/Migration,${appdir}/Config/Schema" />
             <arg line="--reportfile ${appdir}/reports/phpmd.xml" />
         </exec>
     </target>
@@ -79,7 +79,7 @@
     <!-- PHPCPD -->
     <target name="phpcpd" description="Perform project mess detection using PHPMD">
         <exec dir="${basedir}" executable="${vendorbindir}/phpcpd" output="${logdir}/phpcpd.log">
-            <arg line="--exclude Vendor" />
+            <arg line="--exclude vendor" />
             <arg line="--exclude Plugin" />
             <arg line="--exclude webroot" />
             <arg line="--log-pmd ${appdir}/reports/phpcpd.xml" />
@@ -95,7 +95,7 @@
            <arg line="-t ${appdir}/reports/doc" />
            <arg line="-d ${appdir}/" />
            <arg line="-e php" />
-           <arg line="-i ${appdir}/Vendor/,${appdir}/Plugin/,${appdir}/Test/,${appdir}/Config/" />
+           <arg line="-i ${appdir}/vendor/,${appdir}/Plugin/,${appdir}/Test/,${appdir}/Config/" />
            <arg line="-p" />
        </exec>
    </target>
