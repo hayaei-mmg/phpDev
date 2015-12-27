@@ -16,7 +16,7 @@
     <chmod file="${basedir}/app/tmp/" mode= "0777" verbose= "true" />
     <chmod file="${basedir}/app/tmp/logs/" mode= "0777" verbose= "true" />
        <!-- Build(1) -->
-    <target name="build" depends="prepare,caketest,phpcs,phpmd,phpdoc"/>
+    <target name="build" depends="prepare,caketest,phpcs,phpmd,phpcpd,phpdoc"/>
 
     <!-- Prepare(2) -->
     <target name="prepare" description="Prepare for build">
